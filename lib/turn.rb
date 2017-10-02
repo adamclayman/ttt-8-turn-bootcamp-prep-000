@@ -34,10 +34,14 @@ def move(board, index, player_char="X")
 end
 
 def turn(board)
+=begin
   temp_board = board
+=end
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
+=begin
+
   while board == temp_board
     if valid_move? == true
       move(board, index)
@@ -45,4 +49,5 @@ def turn(board)
       "Please enter an unused 1-9:"
     end
   end
+=end
 end

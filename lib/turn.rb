@@ -45,6 +45,7 @@ def turn(board)
   while board == temp_board
     if valid_move? == true
       move(board, index)
+      display_board(board)
     else
       "Please enter an unused 1-9:"
     end

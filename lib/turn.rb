@@ -34,10 +34,6 @@ def move(board, index, player_char="X")
 end
 
 def turn(board)
-=begin
-  temp_board = board
-=end
-
   loop do
     puts "Please enter 1-9:"
     input = gets.strip
@@ -47,16 +43,6 @@ def turn(board)
     end
   end
 
-
-=begin
-
-  while board == temp_board
-    if valid_move? == true
-      move(board, index)
-      display_board(board)
-    else
-      "Please enter an unused 1-9:"
-    end
-  end
-=end
+  move(board, index)
+  display_board(board)
 end

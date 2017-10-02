@@ -33,7 +33,9 @@ def turn
       board[index] = "X"
     else
       puts "Please enter a valid choice of square, 1-9"
-  display_board(board)
+      display_board(board)
+    end
+  end
 end
 
 def display_board(board)

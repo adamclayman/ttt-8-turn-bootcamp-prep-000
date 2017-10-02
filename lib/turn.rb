@@ -33,7 +33,7 @@ def move(board, index, player_char="X")
   board[index] = player_char
 end
 
-def turn
+def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
 end

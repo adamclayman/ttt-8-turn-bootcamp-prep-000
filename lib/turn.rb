@@ -37,16 +37,17 @@ def turn(board)
 =begin
   temp_board = board
 =end
-  
+
   loop do
     puts "Please enter 1-9:"
     input = gets.strip
     index = input_to_index(input)
     if (valid_move?(board, index))
       break
+    end
   end
 
-  
+
 =begin
 
   while board == temp_board

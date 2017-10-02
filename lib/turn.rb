@@ -12,11 +12,19 @@ def input_to_index(input)
 end
 
 def position_taken?(board, index)
+  if (board[index] == " " || board[index] == "" || board[index] = nil)
+    return false
+  else
+    return true
+  end
+end
+
+def valid_move?(board, index)
   if (index >= 0 && index <= 8)
-    if (board[index] == " " || board[index] == "" || board[index] = nil)
-      return false
-    else
+    if position_taken? == false
       return true
+    else
+      return false
     end
   end
 end
